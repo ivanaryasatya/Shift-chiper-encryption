@@ -4,7 +4,7 @@
 using namespace std;
 string lanjutkan = "";
 
-string encryptShiftCipher(const string& text, string shiftValue) {
+string encryptShiftCipher(const string& text, string shiftValue) { // enkripsi shift cipher
     string result = "";
     int shift = stoi(shiftValue);
     for (char ch : text) {
