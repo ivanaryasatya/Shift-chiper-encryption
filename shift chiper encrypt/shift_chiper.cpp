@@ -28,10 +28,10 @@ int main() {
         cin.ignore(); // Clear the newline character from the input buffer
 
         if (choice == 2) {
-            break; // Exit the loop
+            break;
         } else if (choice != 1) {
             cout << "Pilihan tidak valid. Silakan coba lagi." << endl;
-            continue; // Prompt again
+            continue;
         }
         string text;
         string shift;
@@ -44,12 +44,6 @@ int main() {
         cout << "Teks terenkripsi: " << encryptedText << endl;
         text.clear();
         shift = "0";
-        cout << "apakah anda ingin melanjutkan? (y/n): " << lanjutkan << endl;
-        if (lanjutkan == "y" || lanjutkan == "Y") {
-            continue;
-        } else if (lanjutkan == "n" || lanjutkan == "N") {
-            break;
-        }
     }
 
     return 0;
